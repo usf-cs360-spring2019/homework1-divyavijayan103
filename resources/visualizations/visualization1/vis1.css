@@ -1,0 +1,8 @@
+#x-axis line{
+  fill:none;
+  stroke:none;
+}
+#plot rect{
+  fill:green;
+  stroke:black;
+}

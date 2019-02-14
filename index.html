@@ -11,6 +11,7 @@
   <!-- bulma 0.7.2 and font awesome v5.7.1 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css" integrity="sha256-2pUeJf+y0ltRPSbKOeJh09ipQFYxUdct5nTY6GAXswA=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 </head>
 
 <!-- body -->
@@ -22,21 +23,20 @@
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
-          Visualization Assignment
+          Data Visualization Homework-1
         </h1>
         <h2 class="subtitle">
-          Full Name
+          Divya Vijayan
         </h2>
       </div>
     </div>
 
-    <!-- todo: change navigation as needed -->
     <div class="hero-foot">
       <div class="container">
         <nav class="navbar" role="navigation" aria-label="main navigation">
 
           <div class="navbar-brand">
-            <a class="navbar-item" href="#top">
+            <a class="navbar-item" href="#">
               <span class="icon">
                 <i class="fas fa-home"></i>
               </span>
@@ -45,11 +45,29 @@
           </div>
 
           <div id="main-navbar" class="navbar-menu">
-            <a class="navbar-item" href="#vis1">
+            <a class="navbar-item" href="resources/visualizations/visualization1/vis1.html">
               <span class="icon">
                 <i class="fas fa-chart-area"></i>
               </span>
-              <span>Visualization 1</span>
+              <span>Visualization 1(D3)</span>
+            </a>
+          </div>
+
+          <div id="main-navbar" class="navbar-menu">
+            <a class="navbar-item" href="resources/visualizations/visualization2/vis2.html">
+              <span class="icon">
+                <i class="fas fa-chart-area"></i>
+              </span>
+              <span>Visualization 2(D3)</span>
+            </a>
+          </div>
+
+          <div id="main-navbar" class="navbar-menu">
+            <a class="navbar-item" href="resources/visualizations/visualization3/vis3.html">
+              <span class="icon">
+                <i class="fas fa-chart-area"></i>
+              </span>
+              <span>Visualization 3(D3)</span>
             </a>
           </div>
 
@@ -78,28 +96,32 @@
   <section class="section">
     <div class="container content">
       <!-- todo: modify as necessary (or move visualizations to separate pages) -->
+      <h2>Visualization Prototypes from Tableau</h2>
       <h2>Visualization 1</h2>
+       <div class="visualization1">
+          <img src="resources/images/Sheet1.png" alt="visualization1" style="height:650px;width:50%"/>
+       </div>
+       <h2>Visualization 2</h2>
+        <div class="visualization2">
+           <img src="resources/images/Sheet2.png" alt="visualization2" style="height:650px;width:65%"/>
+        </div>
+        <h2>Visualization 3</h2>
+         <div class="visualization3">
+            <img src="resources/images/Sheet3.png" alt="visualization3" style="height:650px;width:50%"/>
+         </div>
+      <!--<svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
+      </svg>-->
 
-      <svg width="100%" height="400" style="background-color: whitesmoke; border: 1px solid black;">
-      </svg>
 
-      <h3>Interpretation</h3>
+      <h3>Credits</h3>
 
       <p>
-        If appropriate, provide a brief discussion of how to interpret this visualization (e.g. how the data is encoded) and how to interact with this visualization. Some of this discussion may not be necessary depending on the legends provided with the visualization.
-      </p>
-
-      <h3>Discussion</h3>
-
-      <p>
-        If appropriate, provide a brief discussion of the primary goal and findings of the visualization, any challenges encountered creating the visualization, and any other context as required by the assignment.
-      </p>
-
-      <h3>Credit</h3>
-
-      <p>
-        If appropriate, provide credit for the dataset, any code used, and design inspirations here. Unsufficient discussion here is a violation of the <a href="/syllabus.html#cheating-policy">academic honesty policy</a> and may result in an F grade for the assignment or the <em>entire</em> course.
-      </p>
+        Data set :
+      </br><a href="https://data.sfgov.org/Public-Safety/Police-Department-Incident-Reports-2018-to-Present/wg3w-h783">data.sfgov.org</a>
+      </br>Code References:
+      </br><a href="https://blockbuilder.org/sjengle/1e23258249638a508426470a48ff2924">Letter Count Bar Chart :Prof Sophie Engle</a>
+      </br><a href="https://medium.freecodecamp.org/learn-d3-js-in-5-minutes-c5ec29fb0725">freecodecamp.org</a>
+      </br>Stack Overflow
     </div>
   </section>
 
@@ -135,7 +157,10 @@
             </td>
 
             <td>
-              If appropriate, provide a brief justification for this level of functionality. Clearly state if this level was not implemented.
+              Implemented prototypes of 3 unique visualizations with 2 encodings.
+              <br/>1. Incident count vs Day of week -Bar Chart with color encoding
+              <br/>2. Neighborhood vs crime count Analysis -Line chart
+              <br/>3. Top most crimes in SFO neighbourhood -Bar Chart
             </td>
           </tr>
 
@@ -150,14 +175,14 @@
             </td>
 
             <td>
-              If appropriate, provide a brief justification for this level of functionality. Clearly state if this level was not implemented.
+            Implemented Incident count vs Day of week -Bar Chart with color encoding in d3
             </td>
           </tr>
 
           <!-- b level functionality -->
           <tr>
             <td class="has-text-centered">
-              <i class="far fa-fw fa-times-circle has-text-danger"></i>
+              <i class="far fa-fw fa-check-circle has-text-success"></i>
             </td>
 
             <td class="has-text-centered">
@@ -165,7 +190,7 @@
             </td>
 
             <td>
-              If appropriate, provide a brief justification for this level of functionality. Clearly state if this level was not implemented.
+              Implemented  Neighborhood vs crime count Analysis -Line chart in d3
             </td>
           </tr>
 
@@ -173,7 +198,7 @@
           <!-- a level functionality -->
           <tr>
             <td class="has-text-centered">
-              <i class="far fa-fw fa-times-circle has-text-danger"></i>
+              <i class="far fa-fw fa-check-circle has-text-success"></i>
             </td>
 
             <td class="has-text-centered">
@@ -181,15 +206,11 @@
             </td>
 
             <td>
-              If appropriate, provide a brief justification for this level of functionality. Clearly state if this level was not implemented.
+              Implemented Top most crimes in SFO neighbourhood -Bar Chart in d3
             </td>
           </tr>
         <tbody>
       </table>
-
-      <p>
-        Any additional context you want to provide regarding functionality and grading can be included here. This may include any challenges or bugs you ran into that prevented you from implementing additional functionality.
-      </p>
     </div>
   </section>
 
@@ -212,20 +233,9 @@
         <div class="media-content">
             <p>
               <!-- todo: replace with your information -->
-              <strong>Full Name</strong>
-              <br/>
-              This is a good place to place a brief biography describing your interests and skills, a professional profile photo, and/or links to your Github, Linkedin, and other <em>professional</em> social media accounts.
-              <br/>
+              <strong>Divya Vijayan</strong>
+              <br/>Graduate student at University of San Francisco California
               <!-- find brand icons at: https://fontawesome.com/icons?d=gallery&s=brands&m=free -->
-              <a href="https://github.com/">
-                <span class="fab fa-github"></span>
-                <span>Github</span>
-              </a>
-              &bullet;
-              <a href="https://www.linkedin.com/">
-                <span class="fab fa-linkedin"></span>
-                <span>LinkedIn</span>
-              </a>
             </p>
 
         </div>
