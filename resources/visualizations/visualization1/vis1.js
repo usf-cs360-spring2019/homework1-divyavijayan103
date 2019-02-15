@@ -101,7 +101,7 @@ var drawGraph=function(data){
           .attr("class","axis-x")
           .text('Day')
           .attr("text-anchor", "middle")
-          .attr("transform", "translate(350,"+(plotHeight+40)+ ")")
+          .attr("transform", "translate("+ plotWidth/2 +","+(plotHeight+40)+ ")")
           .attr("fill","#A64C38");
 
 };
